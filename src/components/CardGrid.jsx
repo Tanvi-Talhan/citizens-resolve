@@ -16,7 +16,7 @@ const cards = [
 
 const CardGrid = () => {
   return (
-    <div className="grid grid-cols-2 gap-4 p-4">
+    <div className="grid grid-cols-5 gap-4 p-4">
       {cards.map((card, index) => (
         <Card key={index} image={card.image} text={card.text} />
       ))}
