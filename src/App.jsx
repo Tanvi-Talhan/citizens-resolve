@@ -1,22 +1,21 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ReportIssue from './pages/ReportIssue';
+import Home from './pages/Home';
 import MainLayout from './components/MainLayout';
-import Home from './components/Home.jsx';
-import ReportIssue from './components/ReportIssue';
-import IssueTracker from './components/IssueTracker';
-import GovernmentAction from './components/GovernmentAction';
-import NewsAndUpdate from './components/NewsAndUpdate.jsx';
-import GuidelinesAndSafetyTips from './components/GuidelinesAndSafety.jsx';
-import UserProfile from './components/UserProfile'
-import FAQ from './components/FAQ';
-import FeedbackAndSuggestion from './components/FeedbackAndSuggestion';
-import AboutUs from './components/AboutUs';
-import TeamAndSupport from './components/TeamAndSupport';
-// import Footer from './components/Footer.jsx';
-// import Navbar from './components/Navbar.jsx';
+import GovernmentAction from './pages/GovernmentAction';
+import IssueTracker from './pages/IssueTracker';
+import NewsAndUpdate from './pages/NewsAndUpdate';
+import GuidelinesAndSafety from './pages/GuidelinesAndSafety';
+import UserProfile from './pages/UserProfile';
+import FAQ from './pages/FAQ';
+import FeedbackAndSuggestion from './pages/FeedbackAndSuggestion';
+import AboutUs from './pages/AboutUs';
+import TeamAndSupport from './pages/TeamAndSupport';
 
 function App() {
   return (
+    // <ReportIssue />
     <Router>
       <Routes>
         <Route path="/" element={<MainLayout />}>
@@ -26,7 +25,7 @@ function App() {
           <Route path="issue-tracker" element={<IssueTracker />} />
           <Route path="government-action" element={<GovernmentAction />} />
           <Route path="news-and-update" element={<NewsAndUpdate />} />
-          <Route path="guidelines-and-safety-tips" element={<GuidelinesAndSafetyTips />} />
+          <Route path="guidelines-and-safety" element={<GuidelinesAndSafety />} />
           <Route path="user-profile" element={<UserProfile />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="feedback-and-suggestion" element={<FeedbackAndSuggestion />} />

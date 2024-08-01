@@ -1,10 +1,11 @@
 import React from 'react'
 
-function GuidelinesAndSafetyTips() {
+const GuidelinesAndSafety = () => {
     return (
         <>
+
         </>
     )
 }
 
-export default GuidelinesAndSafetyTips
+export default GuidelinesAndSafety
