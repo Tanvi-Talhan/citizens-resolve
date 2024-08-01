@@ -1,47 +1,47 @@
 import React, { useState } from 'react';
-import { RiPlantFill } from "react-icons/ri";
+import { RiPlantFill } from 'react-icons/ri';
+import { FaFire, FaAmbulance, FaPlane, FaRegFileAlt, FaExclamationTriangle } from 'react-icons/fa';
 
 const guidelines = [
   {
     title: 'Environmental Safety',
     description: 'Guidelines for pollution control and dealing with natural disasters.',
-    icon: <RiPlantFill />
-    ,
+    icon: <RiPlantFill />, // Using the imported React icon directly
     link: '#environmental-safety',
     details: 'Detailed guidelines for pollution control, including reducing emissions, proper waste disposal, and dealing with natural disasters such as floods, earthquakes, and storms.'
   },
   {
     title: 'Fire Safety',
     description: 'Tips for fire prevention, what to do during a fire, and post-fire actions.',
-    icon: '🔥',
+    icon: <FaFire />, // Using FontAwesome fire icon
     link: '#fire-safety',
     details: 'Detailed tips for fire prevention, including installing smoke detectors, having fire extinguishers, and creating a fire escape plan. Instructions on what to do during a fire and post-fire actions.'
   },
   {
     title: 'Accident Prevention',
     description: 'Road safety, workplace safety, and home safety guidelines.',
-    icon: '🚑',
+    icon: <FaAmbulance />, // Using FontAwesome ambulance icon
     link: '#accident-prevention',
     details: 'Detailed guidelines for road safety, workplace safety, and home safety. Tips include wearing seat belts, following traffic rules, using safety gear at the workplace, and preventing common household accidents.'
   },
   {
     title: 'Travel Safety',
     description: 'Before traveling, during travel, and emergency contact tips.',
-    icon: '✈️',
+    icon: <FaPlane />, // Using FontAwesome plane icon
     link: '#travel-safety',
     details: 'Detailed travel safety tips, including pre-travel preparations, safety measures during travel, and emergency contact information. Tips for safe international travel and dealing with travel-related emergencies.'
   },
   {
     title: 'Government Policies',
     description: 'Overview of relevant government policies and regulations.',
-    icon: '📜',
+    icon: <FaRegFileAlt />, // Using FontAwesome file-alt icon
     link: '#government-policies',
     details: 'Overview of government policies and regulations related to safety, including environmental laws, fire safety regulations, and travel advisories. How to stay updated with policy changes.'
   },
   {
     title: 'Emergency Procedures',
     description: 'Steps to follow during different types of emergencies.',
-    icon: '🚨',
+    icon: <FaExclamationTriangle />, // Using FontAwesome exclamation-triangle icon
     link: '#emergency-procedures',
     details: 'Detailed emergency procedures for various situations such as natural disasters, fires, accidents, and health emergencies. Steps to take before, during, and after an emergency.'
   },
@@ -62,7 +62,7 @@ const Guidelines = () => {
         {guidelines.map((guideline, index) => (
           <div
             key={index}
-            className={`relative flex flex-col items-center rounded-md shadow-md transition-all duration-300 ${activeIndex === index ? 'bg-black' : 'bg-black'
+            className={`relative flex flex-col items-center rounded-md shadow-md transition-all duration-300 ${activeIndex === index ? style={'#780000'} : 'bg-white'
               }`}
             style={{ height: activeIndex === index ? 'auto' : '300px' }}
           >
