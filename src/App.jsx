@@ -9,7 +9,7 @@ import ReportIssue from './pages/ReportIssue.jsx';
 import IssueTracker from './pages/IssueTracker.jsx';
 import GovernmentAction from './pages/GovernmentAction.jsx';
 import NewsAndUpdate from './pages/NewsAndUpdate.jsx';
-import GuidelinesAndSafetyTips from './pages/GuidelinesAndSafety.jsx';
+import Guidelines from './pages/GuidelinesAndSafety.jsx';
 import UserProfile from './pages/UserProfile.jsx'
 import FAQ from './pages/FAQ.jsx';
 import FeedbackAndSuggestion from './pages/FeedbackAndSuggestion.jsx';
@@ -30,7 +30,7 @@ function App() {
           <Route path="issue-tracker" element={<IssueTracker />} />
           <Route path="government-action" element={<GovernmentAction />} />
           <Route path="news-and-update" element={<NewsAndUpdate />} />
-          <Route path="guidelines-and-safety-tips" element={<GuidelinesAndSafety />} />
+          <Route path="guidelines-and-safety-tips" element={<Guidelines />} />
           <Route path="user-profile" element={<UserProfile />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="feedback-and-suggestion" element={<FeedbackAndSuggestion />} />
