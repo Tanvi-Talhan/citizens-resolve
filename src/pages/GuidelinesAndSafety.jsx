@@ -9,7 +9,7 @@ const guidelines = [
     icon: <RiPlantFill />,
     link: '#environmental-safety',
     details: 'Detailed guidelines for pollution control, including reducing emissions, proper waste disposal, and dealing with natural disasters such as floods, earthquakes, and storms.',
-    pdfFile: 'src/assets/pdf/1.pdf',  
+    pdfFile: 'src/assets/pdf/1.pdf',
   },
   {
     title: 'Fire Safety',
@@ -17,7 +17,7 @@ const guidelines = [
     icon: <FaFire />,
     link: '#fire-safety',
     details: 'Detailed tips for fire prevention, including installing smoke detectors, having fire extinguishers, and creating a fire escape plan. Instructions on what to do during a fire and post-fire actions.',
-    pdfFile: 'src/assets/pdf/2.pdf',  
+    pdfFile: 'src/assets/pdf/2.pdf',
   },
   {
     title: 'Accident Prevention',
@@ -25,7 +25,7 @@ const guidelines = [
     icon: <FaAmbulance />,
     link: '#accident-prevention',
     details: 'Detailed guidelines for road safety, workplace safety, and home safety. Tips include wearing seat belts, following traffic rules, using safety gear at the workplace, and preventing common household accidents.',
-    pdfFile: 'src/assets/pdf/3.pdf',  
+    pdfFile: 'src/assets/pdf/3.pdf',
   },
   {
     title: 'Travel Safety',
@@ -33,7 +33,7 @@ const guidelines = [
     icon: <FaPlane />,
     link: '#travel-safety',
     details: 'Detailed travel safety tips, including pre-travel preparations, safety measures during travel, and emergency contact information. Tips for safe international travel and dealing with travel-related emergencies.',
-    pdfFile: 'src/assets/pdf/4.pdf', 
+    pdfFile: 'src/assets/pdf/4.pdf',
   },
   {
     title: 'Government Policies',
@@ -41,7 +41,7 @@ const guidelines = [
     icon: <FaRegFileAlt />,
     link: '#government-policies',
     details: 'Overview of government policies and regulations related to safety, including environmental laws, fire safety regulations, and travel advisories. How to stay updated with policy changes.',
-    pdfFile: 'src/assets/pdf/5.pdf',  
+    pdfFile: 'src/assets/pdf/5.pdf',
   },
   {
     title: 'Emergency Procedures',
@@ -49,7 +49,7 @@ const guidelines = [
     icon: <FaExclamationTriangle />,
     link: '#emergency-procedures',
     details: 'Detailed emergency procedures for various situations such as natural disasters, fires, accidents, and health emergencies. Steps to take before, during, and after an emergency.',
-    pdfFile: 'src/assets/pdf/6.pdf',  
+    pdfFile: 'src/assets/pdf/6.pdf',
   },
 ];
 
@@ -64,7 +64,7 @@ const Guidelines = () => {
     //main container
     <div className="container max-w-screen-xl mx-auto p-4" style={{ backgroundColor: '#780000' }}>
       <h1 className="text-4xl font-bold mb-8 text-center text-orange-200">Guidelines & Safety Tips</h1>
-      
+
       <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-12">
         {guidelines.map((guideline, index) => (
           <div
