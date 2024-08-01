@@ -1,11 +1,9 @@
 import React from 'react'
-
-function Home() {
+function FAQ() {
     return (
         <>
         </>
 
     )
 }
-
-export default Home
+export default FAQ
