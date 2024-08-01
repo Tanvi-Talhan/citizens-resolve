@@ -1,5 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ReportIssue from './pages/ReportIssue';
+import Home from './pages/Home';
 import MainLayout from './components/MainLayout';
 import Home from './pages/Home.jsx';
 import ReportIssue from './pages/ReportIssue.jsx';
@@ -16,11 +18,11 @@ import GuidelinesAndSafety from './pages/GuidelinesAndSafety.jsx';
 
 function App() {
   return (
+    // <ReportIssue />
     <Router>
       <Routes>
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
-          {/* <Route path="navbar" element={<Navbar />} />  */}
           <Route path="report-issue" element={<ReportIssue />} />
           <Route path="issue-tracker" element={<IssueTracker />} />
           <Route path="government-action" element={<GovernmentAction />} />
