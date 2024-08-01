@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './components/MainLayout';
-import Home from './components/Home.jsx';
-import ReportIssue from './components/ReportIssue';
-import IssueTracker from './components/IssueTracker';
-import GovernmentAction from './components/GovernmentAction';
-import NewsAndUpdate from './components/NewsAndUpdate.jsx';
-import GuidelinesAndSafetyTips from './components/GuidelinesAndSafety.jsx';
-import UserProfile from './components/UserProfile'
-import FAQ from './components/FAQ';
-import FeedbackAndSuggestion from './components/FeedbackAndSuggestion';
-import AboutUs from './components/AboutUs';
-import TeamAndSupport from './components/TeamAndSupport';
+import Home from './pages/Home.jsx';
+import ReportIssue from './pages/ReportIssue.jsx';
+import IssueTracker from './pages/IssueTracker.jsx';
+import GovernmentAction from './pages/GovernmentAction.jsx';
+import NewsAndUpdate from './pages/NewsAndUpdate.jsx';
+import GuidelinesAndSafetyTips from './pages/GuidelinesAndSafety.jsx';
+import UserProfile from './pages/UserProfile.jsx'
+import FAQ from './pages/FAQ.jsx';
+import FeedbackAndSuggestion from './pages/FeedbackAndSuggestion.jsx';
+import AboutUs from './pages/AboutUs.jsx';
+import TeamAndSupport from './pages/TeamAndSupport.jsx';
 // import Footer from './components/Footer.jsx';
 // import Navbar from './components/Navbar.jsx';
 
