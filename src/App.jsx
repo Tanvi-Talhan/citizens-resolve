@@ -11,7 +11,7 @@ import FeedbackAndSuggestion from './pages/FeedbackAndSuggestion.jsx';
 import AboutUs from './pages/AboutUs.jsx';
 import TeamAndSupport from './pages/TeamAndSupport.jsx';
 import FAQ from './pages/FAQ.jsx';
-import Guidelines from './pages/Guidelines.jsx';
+import GuidelinesAndSafety from './pages/GuidelinesAndSafety.jsx';
 
 
 function App() {

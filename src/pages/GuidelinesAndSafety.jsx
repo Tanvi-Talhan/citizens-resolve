@@ -53,7 +53,7 @@ const guidelines = [
   },
 ];
 
-const Guidelines = () => {
+const GuidelinesAndSafety = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const handleReadMore = (index) => {
@@ -109,6 +109,6 @@ const Guidelines = () => {
       </div>
     </div>
   );
-};
+}
 
-export default Guidelines;
+export default GuidelinesAndSafety
