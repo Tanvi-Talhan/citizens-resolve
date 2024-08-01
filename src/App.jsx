@@ -7,16 +7,16 @@ import CardGrid from './Components/CardGrid'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './components/MainLayout';
 import Home from './pages/Home.jsx';
-import ReportIssue from './pages/ReportIssue';
-import IssueTracker from './pages/IssueTracker';
-import GovernmentAction from './pages/GovernmentAction';
+import ReportIssue from './pages/ReportIssue.jsx';
+import IssueTracker from './pages/IssueTracker.jsx';
+import GovernmentAction from './pages/GovernmentAction.jsx';
 import NewsAndUpdate from './pages/NewsAndUpdate.jsx';
-import Guidelines from './pages/Guidelines.jsx';
-import UserProfile from './pages/UserProfile';
-import FAQ from './pages/FAQ';
-import FeedbackAndSuggestion from './pages/FeedbackAndSuggestion';
-import AboutUs from './pages/AboutUs';
-import TeamAndSupport from './pages/TeamAndSupport';
+import GuidelinesAndSafetyTips from './pages/GuidelinesAndSafety.jsx';
+import UserProfile from './pages/UserProfile.jsx'
+import FAQ from './pages/FAQ.jsx';
+import FeedbackAndSuggestion from './pages/FeedbackAndSuggestion.jsx';
+import AboutUs from './pages/AboutUs.jsx';
+import TeamAndSupport from './pages/TeamAndSupport.jsx';
 // import Footer from './components/Footer.jsx';
 // import Navbar from './components/Navbar.jsx';
 
@@ -52,7 +52,7 @@ import Guidelines from './pages/GuidelinesAndSafety';
 function App() {
   return (
     <div>
-      
+      <Guidelines />
       <Guidelines/>
       <FAQ/>
       <CardGrid/>
