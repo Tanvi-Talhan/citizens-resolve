@@ -7,9 +7,10 @@ import CardGrid from './Components/CardGrid'
 function App() {
   return (
     <div>
+      
       <Guidelines/>
       <FAQ/>
-      <CardGrid />
+      <CardGrid/>
     </div>
   )
 }
