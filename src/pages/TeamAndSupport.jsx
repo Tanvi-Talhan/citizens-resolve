@@ -1,11 +1,10 @@
 import React from 'react'
 
-function Home() {
+function TeamAndSupport() {
     return (
         <>
         </>
-
     )
 }
 
-export default Home
+export default TeamAndSupport 
