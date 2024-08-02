@@ -15,7 +15,6 @@ import GuidelinesAndSafety from './pages/GuidelinesAndSafety.jsx';
 
 function App() {
   return (
-    // <ReportIssue />
     <Router>
       <Routes>
         <Route path="/" element={<MainLayout />}>
