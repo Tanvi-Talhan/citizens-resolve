@@ -52,8 +52,6 @@ const guidelines = [
     pdfFile: 'src/assets/pdf/6.pdf',
   },
 ];
-
-
 const GuidelinesAndSafety = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -111,6 +109,5 @@ const GuidelinesAndSafety = () => {
     </div>
   );
 }
-
 export default GuidelinesAndSafety
 
