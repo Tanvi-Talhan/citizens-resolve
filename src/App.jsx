@@ -18,7 +18,6 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<MainLayout />}>
-          <Route index element={<Home />} />
           <Route path="report-issue" element={<ReportIssue />} />
           <Route path="issue-tracker" element={<IssueTracker />} />
           <Route path="government-action" element={<GovernmentAction />} />
