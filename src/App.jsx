@@ -1,9 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ReportIssue from './pages/ReportIssue';
 import Home from './pages/Home';
 import MainLayout from './components/MainLayout';
-import Home from './pages/Home.jsx';
 import ReportIssue from './pages/ReportIssue.jsx';
 import IssueTracker from './pages/IssueTracker.jsx';
 import GovernmentAction from './pages/GovernmentAction.jsx';
@@ -14,7 +12,6 @@ import AboutUs from './pages/AboutUs.jsx';
 import TeamAndSupport from './pages/TeamAndSupport.jsx';
 import FAQ from './pages/FAQ.jsx';
 import GuidelinesAndSafety from './pages/GuidelinesAndSafety.jsx';
-
 
 function App() {
   return (
@@ -32,7 +29,6 @@ function App() {
           <Route path="faq" element={<FAQ />} />
           <Route path="feedback-and-suggestion" element={<FeedbackAndSuggestion />} />
           <Route path="about-us" element={<AboutUs />} />
-          {/* <Route path="footer" element={<Footer />} /> */}
           <Route path="team-and-support" element={<TeamAndSupport />} />
         </Route>
       </Routes>
@@ -41,6 +37,3 @@ function App() {
 }
 
 export default App;
-
-
-
