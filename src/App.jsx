@@ -1,7 +1,5 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import ReportIssue from './pages/ReportIssue';
-import Home from './pages/Home';
 import MainLayout from './components/MainLayout';
 import Home from './pages/Home.jsx';
 import ReportIssue from './pages/ReportIssue.jsx';
@@ -27,10 +25,11 @@ function App() {
           <Route path="issue-tracker" element={<IssueTracker />} />
           <Route path="government-action" element={<GovernmentAction />} />
           <Route path="news-and-update" element={<NewsAndUpdate />} />
-          <Route path="guidelines-and-safety-tips" element={<Guidelines />} />
+          <Route path="guidelines-and-safety-tips" element={<GuidelinesAndSafety />} />
           <Route path="user-profile" element={<UserProfile />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="feedback-and-suggestion" element={<FeedbackAndSuggestion />} />
+          <Route path="guidelines-and-safety" element={<GuidelinesAndSafety />} />
           <Route path="about-us" element={<AboutUs />} />
           {/* <Route path="footer" element={<Footer />} /> */}
           <Route path="team-and-support" element={<TeamAndSupport />} />
