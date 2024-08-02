@@ -26,7 +26,7 @@ function App() {
           <Route path="issue-tracker" element={<IssueTracker />} />
           <Route path="government-action" element={<GovernmentAction />} />
           <Route path="news-and-update" element={<NewsAndUpdate />} />
-          <Route path="guidelines-and-safety-tips" element={<GuidelinesAndSafety />} />
+          <Route path="guidelines-and-safety-tips" element={<Guidelines />} />
           <Route path="user-profile" element={<UserProfile />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="feedback-and-suggestion" element={<FeedbackAndSuggestion />} />
