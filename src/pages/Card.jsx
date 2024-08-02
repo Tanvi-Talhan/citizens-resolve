@@ -1,11 +1,19 @@
 import React from 'react';
+import img from '../assets/images/water-drop.png';
 
 const Card = ({ image, text, buttonText }) => {
   return (
-    <div className="flex flex-col items-center bg-white rounded-full shadow-lg p-4">
-      <img src={image} alt={text} className="w-24 h-24 rounded-full mb-2" />
-      <p className="mb-2">{text}</p>
-      <button className="bg-blue-500 text-white rounded px-4 py-2">{buttonText}</button>
+    <div className="relative flex flex-col m-11 items-center justify-center rounded-full shadow-2xl p-3 w-48 h-48 bg-transparent overflow-hidden">
+      <div
+        className="absolute inset-0 bg-cover bg-no-repeat opacity-15"
+        style={{ backgroundImage: `url(${image})` }}
+      />
+      <div className="relative z-10 flex flex-col items-center justify-center">
+        <p className="mb-2 mt-8 text-black text-xl font-bold">{text}</p>
+        <button className="bg-orange-500 hover:bg-green-500 text-white rounded-full px-2 py-1">
+          {buttonText}
+        </button>
+      </div>
     </div>
   );
 };
