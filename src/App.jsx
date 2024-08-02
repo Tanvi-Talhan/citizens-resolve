@@ -1,9 +1,7 @@
-import React from 'react'
-import Guidelines from './Components/Guidelines'
-import FAQ from './Components/FAQ'
-import CardGrid from './Components/CardGrid'
 
-/*import React from 'react';
+
+
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './components/MainLayout';
 import Home from './pages/Home.jsx';
@@ -46,18 +44,7 @@ function App() {
 
 export default App;*/
 
-import React from 'react';
-import Guidelines from './pages/GuidelinesAndSafety';
 
-function App() {
-  return (
-    <div>
-      
-      <Guidelines/>
-      <FAQ/>
-      <CardGrid/>
-    </div>
-  )
-}
-export default App
-export default App
+
+
+
