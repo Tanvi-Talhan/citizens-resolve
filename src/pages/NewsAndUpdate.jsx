@@ -14,7 +14,7 @@ const NewsPortal = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-0">
           {/* Big Card */}
           <div className="bg-white rounded-lg shadow-md p-4 lg:col-span-1">
-            <img src={img1} alt="img1" className="w-full rounded-lg mb-4" />
+          <img src={img1} alt="img1" className="w-full rounded-lg mb-4" />
             <div className="flex justify-between items-center">
               <span className="text-white px-2 py-1 rounded-md text-sm"style={{ backgroundColor: '#780000' }}>Gadget</span>
               <span className="text-white px-2 py-1 rounded-md text-sm"style={{ backgroundColor: '#780000' }}>Tech</span>
