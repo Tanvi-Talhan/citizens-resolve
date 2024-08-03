@@ -1,59 +1,84 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Breadcrumb from './Breadcrumb';
 import image from "../assets/logo.png";
-import image2 from "../assets/bg-2.png";
-import image3 from "../assets/bg-3.png";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+// import required modules
+import { Navigation } from 'swiper/modules';
+import image5 from "../assets/home-carousel/1.png";
+import image6 from "../assets/home-carousel/2.png";
+import image7 from "../assets/home-carousel/3.png";
+import image8 from "../assets/home-carousel/4.png";
 
 function Home() {
+    const [sidebarOpen, setSidebarOpen] = useState(false);
+
     return (
         <>
-            <div className="min-h-screen grid grid-cols-4">
-                <aside className="col-span-1 bg-[#fdf0d5] text-black flex flex-col sticky top-0 h-screen">
-                    <div className="flex justify-center mt-5">
-                        <img src={image} alt="Citizen Resolve Logo" className="h-24 w-24 p-2" />
+            <div className="min-h-screen flex flex-col md:grid md:grid-cols-12">
+                {/* Sidebar */}
+                <aside className={`col-span-2 bg-[#e0e1dd] text-black flex flex-col md:sticky md:top-0 h-screen md:h-auto z-20 ${sidebarOpen ? 'block' : 'hidden'} md:block`}>
+                    <div className="flex  mt-5 ">
+                        <img src={image} alt="Citizen Resolve Logo" className="h-32 w-32 " />
                     </div>
-                    <nav className="flex flex-col mt-5 space-y-2 px-5">
-                        <Link to="/" className="p-3 hover:bg-red-900 hover:text-white font-bold">Home</Link>
-                        <Link to="/report-issue" className="p-3 hover:bg-red-900 hover:text-white font-bold">Report Issue</Link>
-                        <Link to="/issue-tracker" className="p-3 hover:bg-red-900 hover:text-white font-bold">Issue Tracker</Link>
-                        <Link to="/government-action" className="p-3 hover:bg-red-900 hover:text-white font-bold">Government Action</Link>
-                        <Link to="/news-and-update" className="p-3 hover:bg-red-900 hover:text-white font-bold">News and Update</Link>
-                        <Link to="/guidelines-and-safety-tips" className="p-3 hover:bg-red-900 hover:text-white font-bold">Guidelines and Safety Tips</Link>
-                        <Link to="/user-profile" className="p-3 hover:bg-red-900 hover:text-white font-bold">User Profile</Link>
-                        <Link to="/faq" className="p-3 hover:bg-red-900 hover:text-white font-bold">FAQ</Link>
-                        <Link to="/feedback-and-suggestion" className="p-3 hover:bg-red-900 hover:text-white font-bold">Feedback and Suggestion</Link>
-                        <Link to="/about-us" className="p-3 hover:bg-red-900 hover:text-white font-bold">About Us</Link>
-                        <Link to="/team-and-support" className="p-3 hover:bg-red-900 hover:text-white font-bold">Team and Support</Link>
+                    <nav className="flex flex-col mt-5 px-5">
+                        <Link to="/" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Home</Link>
+                        <Link to="/report-issue" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Report Issue</Link>
+                        <Link to="/issue-tracker" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Issue Tracker</Link>
+                        <Link to="/government-action" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Government Action</Link>
+                        <Link to="/news-and-update" className="p-2 hover:bg-[#003049] hover:text-white font-bold">News and Update</Link>
+                        <Link to="/guidelines-and-safety-tips" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Guidelines and Safety Tips</Link>
+                        <Link to="/user-profile" className="p-2 hover:bg-[#003049] hover:text-white font-bold">User Profile</Link>
+                        <Link to="/faq" className="p-2 hover:bg-[#003049] hover:text-white font-bold">FAQ</Link>
+                        <Link to="/feedback-and-suggestion" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Feedback and Suggestion</Link>
+                        <Link to="/about-us" className="p-2 hover:bg-[#003049] hover:text-white font-bold">About Us</Link>
+                        <Link to="/team-and-support" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Team and Support</Link>
                     </nav>
                 </aside>
-                <div className="col-span-3 flex flex-col">
-                    <nav className="w-full h-14 z-10 sticky top-0" style={{ backgroundColor: "#780000" }}>
+
+                {/* Main content */}
+                <div className="col-span-10 flex flex-col">
+                    {/* Navbar */}
+                    <nav className="w-full h-14 z-10 sticky top-0 flex items-center justify-between px-4 md:px-0" style={{ backgroundColor: "#003049" }}>
+                        <button
+                            className="text-white md:hidden"
+                            onClick={() => setSidebarOpen(!sidebarOpen)}
+                        >
+                            {sidebarOpen ? 'Close' : 'Menu'}
+                        </button>
                         <Breadcrumb />
                     </nav>
-                    <main className="flex-grow bg-cover bg-no-repeat p-4">
-                        {/* Two-column grid layout */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {/* Content Column */}
-                            <div className="flex flex-col justify-center p-4">
-                                <h1 className="text-red-900 font-bold text-3xl mb-4">
-                                    "Transforming Complaints into Solutions: Let’s Fix Our Community!"
-                                </h1>
-                                <p className="text-lg mb-2">
-                                    "Stand Up for Your Rights: Report Issues, Get Involved!"
-                                </p>
-                                <p className="text-lg mb-2">
-                                    "Be the Change: Report Issues, Impact Lives!"
-                                </p>
-                                <img src={image3} alt="Main Content" className=" h-fit object-right  w-screen" />
-                            </div>
-                            {/* Image Column */}
-                            <div className="flex justify-center items-center p-4">
-                                <img src={image2} alt="Main Content" className=" h-fit object-right  w-screen" />
-                            </div>
-                        </div>
+
+                    {/* Main content with Swiper */}
+                    <main className="flex-grow flex bg-cover bg-no-repeat ">
+                        <Swiper
+                            navigation={true}
+                            modules={[Navigation]}
+                            className="mySwiper flex w-full"
+                        >
+                            <SwiperSlide>
+                                <img src={image6} alt="image" className="border-4 border-black" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={image5} alt="image" className="border-4 border-black" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={image7} alt="image" className="border-4 border-black" />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <img src={image8} alt="image" className="border-4 border-black" />
+                            </SwiperSlide>
+                        </Swiper>
                     </main>
-                    <footer className="w-full text-white py-8" style={{ backgroundColor: "#780000" }}>
+
+                    {/* Footer */}
+                    <footer className="w-full text-white py-4" style={{ backgroundColor: "#003049" }}>
                         <div className="container mx-auto px-4">
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
                                 <div>
