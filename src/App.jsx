@@ -12,6 +12,7 @@ import AboutUs from './pages/AboutUs.jsx';
 import TeamAndSupport from './pages/TeamAndSupport.jsx';
 import FAQ from './pages/FAQ.jsx';
 import GuidelinesAndSafety from './pages/GuidelinesAndSafety.jsx';
+import Home from './pages/Home.jsx';
 
 function App() {
   return (
