@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+<<<<<<< HEAD
 import MainLayout from './components/MainLayout';
 import ReportIssue from './pages/ReportIssue.jsx';
 import IssueTracker from './pages/IssueTracker.jsx';
@@ -12,11 +13,26 @@ import TeamAndSupport from './pages/TeamAndSupport.jsx';
 import FAQ from './pages/FAQ.jsx';
 import GuidelinesAndSafety from './pages/GuidelinesAndSafety.jsx';
 import Home from './pages/Home.jsx';
+=======
+import MainLayout from './components/MainLayout.jsx';
+import Home from './Pages/Home.jsx';
+import ReportIssue from './Pages/ReportIssue.jsx';
+import IssueTracker from './Pages/IssueTracker.jsx';
+import GovernmentAction from './Pages/GovernmentAction.jsx';
+import NewsAndUpdate from './Pages/NewsAndUpdate.jsx';
+import UserProfile from './Pages/UserProfile.jsx';
+import FeedbackAndSuggestion from './Pages/FeedbackAndSuggestion.jsx';
+import AboutUs from './Pages/AboutUs.jsx';
+import TeamAndSupport from './Pages/TeamAndSupport.jsx';
+import FAQ from './Pages/FAQ.jsx';
+import GuidelinesAndSafety from './Pages/GuidelinesAndSafety.jsx';
+>>>>>>> c8ac631d194d387781de803020adea9d66a7fcbb
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/" element={<MainLayout />}>
           <Route index element={<Home />} />
           <Route path="report-issue" element={<ReportIssue />} />
