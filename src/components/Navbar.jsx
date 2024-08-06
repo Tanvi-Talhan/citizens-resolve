@@ -1,18 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Breadcrumb from '../pages/Breadcrumb';
 
 const Navbar = () => {
+    const [sidebarOpen, setSidebarOpen] = useState(false);
     return (
-        // <div class="grid grid-cols-5 gap-1 col-span-2">
-        // <div class="col-start-2">
-        <nav className="bg-blue-950 w-full h-14">
-            <Breadcrumb />
-
-        </nav>
-        // </div>
-
-        // </div>
-
+        <>
+            <nav className="w-full h-14 z-10 sticky top-0 flex items-center justify-between px-4 md:px-0" style={{ backgroundColor: "#003049" }}>
+                <button
+                    className="text-white md:hidden"
+                    onClick={() => setSidebarOpen(!sidebarOpen)}
+                >
+                    {sidebarOpen ? 'Close' : 'Menu'}
+                </button>
+                <Breadcrumb />
+            </nav>
+        </>
     );
 };
 
