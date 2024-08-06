@@ -1,31 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import Footer from './Footer';
 import image from "../assets/logo.png";
 
 const Sidebar = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
-    <div className="h-screen w-80 bg-gray-800 text-sky-300 flex flex-col ">
-      <div className=" flex items-center justify-center ">
-        <img src={image} alt="Citizen Resolve Logo" className=" items-center h-40 w-42 " />
-      </div>
-      <nav className=" flex flex-col space-y-2 ml-16">
-        <Link to="/" className="p-2 hover:bg-blue-850">Home</Link>
-        <Link to="/report-issue" className="p-2 hover:bg-gray-700">Report Issue</Link>
-        <Link to="/issue-tracker" className="p-2 hover:bg-gray-700">Issue Tracker</Link>
-        <Link to="/government-action" className="p-2 hover:bg-gray-700">Government Action</Link>
-        <Link to="/news-and-update" className="p-2 hover:bg-gray-700">News and Update</Link>
-        <Link to="/guidelines-and-safety-tips" className="p-2 hover:bg-gray-700">Guidelines and Safety </Link>
-        <Link to="/user-profile" className="p-2 hover:bg-gray-700">User Profile</Link>
-        <Link to="/faq" className="p-2 hover:bg-gray-700">FAQ</Link>
-        <Link to="/feedback-and-suggestion" className="p-2 hover:bg-gray-700">Feedback and Suggestion</Link>
-        <Link to="/about-us" className="p-2 hover:bg-gray-700">About Us</Link>
-        <Link to="/team-and-support" className="p-2 hover:bg-gray-700">Team and Support</Link>
-      </nav>
-      <div className="mt-auto p-4">
-        {/* <Footer /> */}
-      </div>
-    </div>
+    <>
+      {/* Sidebar */}
+      < aside className={`col-span-2 bg-[#e0e1dd] text-black flex flex-col md:sticky md:top-0 h-screen md:h-auto z-20 ${sidebarOpen ? 'block' : 'hidden'} md:block`
+      }>
+        <div className="flex  mt-5 ">
+          <img src={image} alt="Citizen Resolve Logo" className="h-32 w-32 " />
+        </div>
+        <nav className="flex flex-col mt-5 px-5">
+          <Link to="/" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Home</Link>
+          <Link to="/report-issue" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Report Issue</Link>
+          <Link to="/issue-tracker" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Issue Tracker</Link>
+          <Link to="/government-action" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Government Action</Link>
+          <Link to="/news-and-update" className="p-2 hover:bg-[#003049] hover:text-white font-bold">News and Update</Link>
+          <Link to="/guidelines-and-safety-tips" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Guidelines and Safety Tips</Link>
+          <Link to="/user-profile" className="p-2 hover:bg-[#003049] hover:text-white font-bold">User Profile</Link>
+          <Link to="/faq" className="p-2 hover:bg-[#003049] hover:text-white font-bold">FAQ</Link>
+          <Link to="/feedback-and-suggestion" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Feedback and Suggestion</Link>
+          <Link to="/about-us" className="p-2 hover:bg-[#003049] hover:text-white font-bold">About Us</Link>
+          <Link to="/team-and-support" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Team and Support</Link>
+        </nav>
+      </aside >
+    </>
   );
 };
 

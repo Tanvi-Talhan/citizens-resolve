@@ -3,21 +3,21 @@ import img1 from '../assets/News/1.jpg';
 
 const NewsPortal = () => {
   return (
-    <div className="bg-gray-100">
-      <header className="text-white py-4"style={{ backgroundColor: '#780000' }}>
+    <div className=""style={{ backgroundColor: '#e0e1dd' }}>
+      <header className="text-white py-4"style={{ backgroundColor: '#003049' }}>
         <div className="flex">
           <h1 className="ml-4 text-center text-2xl font-bold">NEWS PORTAL</h1>
         </div>
       </header>
 
-      <main className="container mx-auto mt-8 bg-orange-100">
+      <main className="container mx-auto mt-8"style={{ backgroundColor: '#e0e1dd' }}>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-0">
           {/* Big Card */}
           <div className="bg-white rounded-lg shadow-md p-4 lg:col-span-1">
-            <img src={img1} alt="img1" className="w-full rounded-lg mb-4" />
+          <img src={img1} alt="img1" className="w-full rounded-lg mb-4" />
             <div className="flex justify-between items-center">
-              <span className="text-white px-2 py-1 rounded-md text-sm"style={{ backgroundColor: '#780000' }}>Gadget</span>
-              <span className="text-white px-2 py-1 rounded-md text-sm"style={{ backgroundColor: '#780000' }}>Tech</span>
+              <span className="text-white px-2 py-1 rounded-md text-sm"style={{ backgroundColor: '#003049' }}>Gadget</span>
+              <span className="text-white px-2 py-1 rounded-md text-sm"style={{ backgroundColor: '#003049' }}>Tech</span>
             </div>
             <h3 className="text-lg font-bold mb-2">Trending Gadget That Simply Change Your Lifestyle</h3>
             <p className="text-gray-600 text-sm">July 17, 2017 <span className="text-gray-400">&nbsp;DemoAdmin</span></p>
@@ -30,7 +30,7 @@ const NewsPortal = () => {
             <div className="bg-white rounded-lg shadow-md p-4">
               <img src="/best-new-phone.jpg" alt="Best New Phone For New Lifestyle" className="w-full rounded-lg mb-4" />
               <div className="flex justify-between items-center">
-                <span className="text-white px-2 py-1 rounded-md text-sm"style={{ backgroundColor: '#780000' }}>Lifestyle</span>
+                <span className="text-white px-2 py-1 rounded-md text-sm"style={{ backgroundColor: '#003049' }}>Lifestyle</span>
               </div>
               <h3 className="text-lg font-bold mb-2">Best New Phone For New Lifestyle</h3>
               <p className="text-gray-600 text-sm">July 20, 2017 <span className="text-gray-400">&nbsp;DemoAdmin</span></p>
@@ -75,7 +75,7 @@ const NewsPortal = () => {
             <div className="bg-white rounded-lg shadow-md p-4">
               <img src="/nutritious-food.jpg" alt="Nutritious Food" className="w-full rounded-lg mb-4" />
               <div className="flex justify-between items-center">
-                <span className= "text-white px-2 py-1 rounded-md text-sm"style={{ backgroundColor: '#780000' }}>Travel</span>
+                <span className= "text-white px-2 py-1 rounded-md text-sm"style={{ backgroundColor: '#003049' }}>Travel</span>
               </div>
               <h3 className="text-lg font-bold mb-2">Nutritious Food For Healthy Life</h3>
               <p className="text-gray-600 text-sm">July 24, 2017 <span className="text-gray-400">&nbsp;DemoAdmin</span></p>
