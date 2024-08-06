@@ -3,6 +3,7 @@ import React from 'react';
 
 const ReportIssue = () => {
     return (
+
         <div className="max-w-lg mx-auto p-4 bg-white shadow-md rounded-lg">
             <h2 className="text-2xl font-bold mb-4">Report an Issue</h2>
             <form>
