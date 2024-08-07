@@ -11,8 +11,10 @@ import AboutUs from './pages/AboutUs.jsx';
 import TeamAndSupport from './pages/TeamAndSupport.jsx';
 import FAQ from './pages/FAQ.jsx';
 import GuidelinesAndSafety from './pages/GuidelinesAndSafety.jsx';
+import Home from './pages/Home.jsx';
 import Sidebar from './components/Sidebar.jsx';
 import Login from './components/Login.jsx';
+
 function App() {
   return (
     <Router>
@@ -20,7 +22,7 @@ function App() {
         {/* <Route path="/" element={<Home />} /> */}
         <Route path="/" element={<Sidebar />}>
           <Route index element={<Home />} />
-          <Route path="report-issue" element={<ReportIssue />} />
+          <Route path="report-issue" element={<ReportIssue/>} />
           <Route path="issue-tracker" element={<IssueTracker />} />
           <Route path="government-action" element={<GovernmentAction />} />
           <Route path="news-and-update" element={<NewsAndUpdate />} />
