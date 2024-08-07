@@ -11,14 +11,14 @@ import AboutUs from './pages/AboutUs.jsx';
 import TeamAndSupport from './pages/TeamAndSupport.jsx';
 import FAQ from './pages/FAQ.jsx';
 import GuidelinesAndSafety from './pages/GuidelinesAndSafety.jsx';
-import Home from './pages/Home.jsx';
 import Sidebar from './components/Sidebar.jsx';
-import Login from './components/Login.jsx';
+import Login from './pages/Login.jsx';
 
 function App() {
   return (
     <Router>
       <Routes>
+      <Route path="login" element={<Login />} />
         {/* <Route path="/" element={<Home />} /> */}
         <Route path="/" element={<Sidebar />}>
           <Route index element={<Home />} />
@@ -32,7 +32,6 @@ function App() {
           <Route path="feedback-and-suggestion" element={<FeedbackAndSuggestion />} />
           <Route path="about-us" element={<AboutUs />} />
           <Route path="team-and-support" element={<TeamAndSupport />} />
-          <Route path="login" element={<Login />} />
         </Route>
       </Routes>
     </Router>
