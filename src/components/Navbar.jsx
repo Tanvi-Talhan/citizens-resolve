@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Breadcrumb from '../pages/Breadcrumb';
+import Breadcrumb from './Breadcrumb';
 
 const Navbar = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);

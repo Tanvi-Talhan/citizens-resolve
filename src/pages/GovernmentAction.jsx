@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import Card from '../components/Card';
 
 const cards = [
     { image: 'src/assets/images/water-drop.png', text: 'Water Issue', buttonText: 'Click Me' },
