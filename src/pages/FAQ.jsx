@@ -8,7 +8,7 @@ const AccordionItem = ({ title, content }) => {
     
     <div className="border border-black-300 rounded mb-2">
       <div
-        className={`p-4 cursor-pointer bg-red-300 text-white flex justify-between  text-center items-center ${isOpen ? 'rounded-t' : 'rounded'}`}
+        className={`p-4 cursor-pointer bg-[#669bbc] text-white flex justify-between  text-center items-center ${isOpen ? 'rounded-t' : 'rounded'}`}
         onClick={() => setIsOpen(!isOpen)}
       > 
         <span>{title}</span>
@@ -35,7 +35,7 @@ const FAQ = () => {
 
   return (
     <>
-    <div className='p-4 cursor-pointer bg-red-500 text-white text-center font-bold text-2xl'>FAQ</div>
+    <div className='p-4 cursor-pointer bg-[#669bbc] text-white text-center font-bold text-2xl'>FAQ</div>
     <div className="max-w-m mx-auto mt-10 text-center">
       {items.map((item, index) => (
         <AccordionItem key={index} title={item.title} content={item.content} />

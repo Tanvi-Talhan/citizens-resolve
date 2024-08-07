@@ -10,7 +10,7 @@ const Card = ({ image, text, buttonText }) => {
       />
       <div className="relative z-10 flex flex-col items-center justify-center">
         <p className="mb-2 mt-8 text-black text-xl font-bold">{text}</p>
-        <button className="bg-[#e0e1dd]  text-blue-950 rounded-full px-2 py-1">
+        <button className="bg-[#e0e1dd]  text-blue-950 rounded-full px-2 py-1 bg-sky-900 text-white rounded hover:bg-sky-500 hover:text-black transition">
           {buttonText}
         </button>
       </div>

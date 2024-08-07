@@ -1,37 +1,49 @@
+// src/CardContainer.jsx
 import React from 'react';
+import Cards from '../components/Cards';
 
+const teamMembers = [
+  {
+    name: 'Mandy Reynolds',
+    title: 'UX/UI Designer',
+    image: 'https://via.placeholder.com/150',
+  },
+  {
+    name: 'Samuel Hardy',
+    title: 'Web Developer',
+    image: 'https://via.placeholder.com/150',
+  },
+  {
+    name: 'Tom Sunderland',
+    title: 'Software Engineer',
+    image: 'https://via.placeholder.com/150',
+  },
+  {
+    name: 'John Doe',
+    title: 'Project Manager',
+    image: 'https://via.placeholder.com/150',
+  },
+  {
+    name: 'Alice Johnson',
+    title: 'Graphic Designer',
+    image: 'https://via.placeholder.com/150',
+  },
+];
 
 const AboutUs = () => {
   return (
-    <div className="about-container">
-      <div className="about-header">
-        <h1>About Us</h1>
-        <p>Welcome to the ultimate destination for online casino games. Our mission is to provide a thrilling and safe gaming experience for all players.</p>
-      </div>
-      <div className="team-section">
-        <h2>Meet Our Team</h2>
-        <div className="team-cards">
-          <div className="team-card">
-            <img src="src/assets/images/light-bulb.png" alt="Team Member 1" />
-            <h3>Vaibhav Kondhekar</h3>
-            <p></p>
-            <p>Git management, UI design using bootstrap, creation and pages linking</p>
-          </div>
-          <div className="team-card">
-            <img src="src/assets/images/light-bulb.png" alt="Team Member 2" />
-            <h3>Prasanna Mane</h3>
-            <p></p>
-            <p>Logic building, and creating the games using javascript</p>
-          </div>
-          <div className="team-card">
-            <img src="src/assets/images/light-bulb.png" alt="Team Member 3" />
-            <h3>Kamesh Nikode</h3>
-            <p></p>
-            <p>Logic building, and creating the games using javascript</p>
-          </div>
+    <section className="bg-gray-100 py-12">
+      <div className="container mx-auto px-6">
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">About US</h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="p-4">
+              <Cards {...member} />
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
