@@ -9,22 +9,12 @@ import picture2 from "../assets/home-carousel/team3.jpeg";
 const TeamAndSupport = () => {
     return (
         <>
-            <div className="min-h-screen flex flex-col md:grid md:grid-cols-12">
-                <Sidebar />
-
-                {/* Main content */}
-                <div className="col-span-10 flex flex-col">
-                    {/* Navbar */}
-                    <Navbar />
                     <div className="min-h-screen bg-cover bg-center" style={{ backgroundImage: 'url(path-to-your-background-image.jpg)' }}>
                         <div className="bg-[#669bbc]  min-h-screen p-10">
                             <TeamSection />
                             <SupportSection />
                         </div>
                     </div>
-                    <Footer />
-                </div>
-            </div>
         </>
     );
 }

@@ -7,13 +7,6 @@ import Footer from '../components/Footer';
 const ReportIssue = () => {
     return (
         <>
-            <div className="min-h-screen flex flex-col md:grid md:grid-cols-12 bg-[#669bbc]">
-                <Sidebar />
-
-                {/* Main content */}
-                <div className="col-span-10 flex flex-col">
-                    {/* Navbar */}
-                    <Navbar />
                     <div className="max-w-9xl mx-8 p-4  shadow-md rounded-lg my-6 bg-[#003049]">
                         <h2 className="text-2xl font-bold mb-4  text-white items-center">Report an Issue</h2>
                         <form className="flex flex-col md:flex-row gap-6">
@@ -163,11 +156,7 @@ const ReportIssue = () => {
                                 </div>
                             </div>
                         </form>
-                    </div>
-                    <Footer />
-                </div>
             </div>
-
         </>
 
     );
