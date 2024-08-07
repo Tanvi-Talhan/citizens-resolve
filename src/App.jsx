@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import MainLayout from './components/MainLayout';
 import Home from './pages/Home.jsx';
 import ReportIssue from './pages/ReportIssue.jsx';
 import IssueTracker from './pages/IssueTracker.jsx';
@@ -12,13 +11,14 @@ import AboutUs from './pages/AboutUs.jsx';
 import TeamAndSupport from './pages/TeamAndSupport.jsx';
 import FAQ from './pages/FAQ.jsx';
 import GuidelinesAndSafety from './pages/GuidelinesAndSafety.jsx';
+import Sidebar from './components/Sidebar.jsx';
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/" element={<MainLayout />}>
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/" element={<Sidebar />}>
           <Route index element={<Home />} />
           <Route path="report-issue" element={<ReportIssue />} />
           <Route path="issue-tracker" element={<IssueTracker />} />
