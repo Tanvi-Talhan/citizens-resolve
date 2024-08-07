@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { RiPlantFill } from 'react-icons/ri';
 import { FaFire, FaAmbulance, FaPlane, FaRegFileAlt, FaExclamationTriangle } from 'react-icons/fa'; // for react icons
-import Sidebar from '../components/Sidebar';
-import Navbar from '../components/Navbar';
 
 const guidelines = [
   {
@@ -63,12 +61,7 @@ const GuidelinesAndSafety = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col md:grid md:grid-cols-12 bg-[#669bbc]">
-      <Sidebar />
-      <div className="col-span-10 flex flex-col">
-        <Navbar />
-        <div className="container max-w-screen-xl mx-auto p-4" style={{ backgroundColor: '#003049' }}>
-          <h1 className="text-4xl font-bold mb-8 text-center text-sky-300">Guidelines & Safety Tips</h1>
+        <div className="container max-w-screen-xl mx-auto p-4" style={{ backgroundColor: '#669bbc' }}>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
             {guidelines.map((guideline, index) => (
               <div
@@ -76,7 +69,7 @@ const GuidelinesAndSafety = () => {
                 className="relative flex flex-col items-center rounded-md shadow-md transition-all duration-300"
                 style={{
                   height: activeIndex === index ? 'auto' : '300px',
-                  backgroundColor: '#e0e1dd', // card outer color
+                  backgroundColor: '#edf6f9', // card outer color
                 }}
               >
                 <div className="text-3xl sm:text-4xl mb-4 mt-6">
@@ -91,14 +84,14 @@ const GuidelinesAndSafety = () => {
                 <div className="mt-auto mb-4">
                   <button
                     onClick={() => handleReadMore(index)}
-                    className="inline-block px-4 py-2 sm:px-6 sm:py-2 bg-sky-400 text-white rounded hover:bg-sky-500 hover:text-black transition"
+                    className="inline-block px-4 py-2 sm:px-6 sm:py-2 text-white rounded hover:bg-sky-500 hover:text-white transition"style={{background:'#003049'}}
                   >
                     {activeIndex === index ? 'Show Less' : 'Read More'}
                   </button>
                   <a
                     href={guideline.pdfFile}
                     download
-                    className="inline-block px-4 py-2 sm:px-6 sm:py-2 ml-2 bg-sky-400 text-white rounded hover:bg-sky-500 hover:text-black transition"
+                    className="inline-block px-4 py-2 sm:px-6 sm:py-2 ml-2 text-white rounded hover:bg-sky-500 hover:text-white transition"style={{background:'#003049'}}
                   >
                     Get PDF
                   </a>
@@ -112,8 +105,6 @@ const GuidelinesAndSafety = () => {
             ))}
           </div>
         </div>
-      </div>
-    </div>
   );
 };
 
