@@ -61,8 +61,8 @@ const GuidelinesAndSafety = () => {
 
   return (
     //main container
-    <div className="container max-w-screen-xl mx-auto p-4" style={{ backgroundColor: '#780000' }}>
-      <h1 className="text-4xl font-bold mb-8 text-center text-orange-200">Guidelines & Safety Tips</h1>
+    <div className="container max-w-screen-xl mx-auto p-4" style={{ backgroundColor: '#003049' }}>
+      <h1 className="text-4xl font-bold mb-8 text-center text-sky-300">Guidelines & Safety Tips</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-12">
         {guidelines.map((guideline, index) => (
@@ -71,7 +71,7 @@ const GuidelinesAndSafety = () => {
             className="relative flex flex-col items-center rounded-md shadow-md transition-all duration-300"
             style={{
               height: activeIndex === index ? 'auto' : '300px',
-              backgroundColor: '#fdf0d5',//card outer color
+              backgroundColor: '#e0e1dd',//card outer color
             }}
           >
             <div className="text-4xl mb-4 mt-6">
@@ -86,20 +86,20 @@ const GuidelinesAndSafety = () => {
             <div className="mt-auto">
               <button
                 onClick={() => handleReadMore(index)}
-                className="inline-block px-6 py-2 mb-10 bg-orange-500 text-white rounded hover:bg-green-500 hover:text-black transition"
+                className="inline-block px-6 py-2 mb-10 bg-sky-400 text-white rounded hover:bg-sky-500 hover:text-black transition"
               >
                 {activeIndex === index ? 'Show Less' : 'Read More'}
               </button>
               <a
                 href={guideline.pdfFile}
                 download
-                className="inline-block px-6 py-2 mb-10 ml-5 bg-orange-500 text-white rounded hover:bg-green-500 hover:text-black transition"
+                className="inline-block px-6 py-2 mb-10 ml-5 bg-sky-400 text-white rounded hover:bg-sky-500 hover:text-black transition"
               >
                 Get PDF
               </a>
             </div>
             {activeIndex === index && (
-              <div className="w-full bg-orange-50 text-left p-4 mt-4 rounded-b-md shadow-md">
+              <div className="w-full 3 text-left p-4 mt-4 rounded-b-md shadow-md">
                 <p className="text-base text-black">{guideline.details}</p>
               </div>
             )}
