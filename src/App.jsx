@@ -33,9 +33,9 @@ function App() {
 
           <Route path="about-us" element={<AboutUs />} />
           <Route path="team-and-support" element={<TeamAndSupport />} />
-          <Route path="Login" element={<Login/>} />
+          {/* <Route path="Login" element={<Login/>} />
           <Route path="Signup" element={<Signup/>} />
-         
+          */}
         </Route>
       </Routes>
     </Router>
