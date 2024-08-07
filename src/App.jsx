@@ -12,6 +12,8 @@ import AboutUs from './pages/AboutUs.jsx';
 import TeamAndSupport from './pages/TeamAndSupport.jsx';
 import FAQ from './pages/FAQ.jsx';
 import GuidelinesAndSafety from './pages/GuidelinesAndSafety.jsx';
+import Login from './components/Login.jsx';
+import Signup from './components/Signup.jsx';
 
 function App() {
   return (
@@ -30,6 +32,9 @@ function App() {
           <Route path="feedback-and-suggestion" element={<FeedbackAndSuggestion />} />
           <Route path="about-us" element={<AboutUs />} />
           <Route path="team-and-support" element={<TeamAndSupport />} />
+          <Route path="Login" element={<Login/>} />
+          <Route path="Signup" element={<Signup/>} />
+         
         </Route>
       </Routes>
     </Router>

@@ -39,6 +39,7 @@ function Home() {
                         <Link to="/feedback-and-suggestion" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Feedback and Suggestion</Link>
                         <Link to="/about-us" className="p-2 hover:bg-[#003049] hover:text-white font-bold">About Us</Link>
                         <Link to="/team-and-support" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Team and Support</Link>
+                        <Link to="/Login" className="p-2 hover:bg-[#003049] hover:text-white font-bold"><Login></Login>t</Link>
                     </nav>
                 </aside>
 
