@@ -1,23 +1,7 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import Breadcrumb from './Breadcrumb';
-import image from "../assets/logo.png";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-
-// import required modules
-import { Navigation } from 'swiper/modules';
-import image5 from "../assets/home-carousel/1.png";
-import image6 from "../assets/home-carousel/2.png";
-import image7 from "../assets/home-carousel/3.png";
-import image8 from "../assets/home-carousel/4.png";
+import React from 'react';
+import Hero from '../components/Hero';
 
 function Home() {
-    const [sidebarOpen, setSidebarOpen] = useState(false);
 
     return (
         <>
@@ -39,9 +23,6 @@ function Home() {
                         <Link to="/feedback-and-suggestion" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Feedback and Suggestion</Link>
                         <Link to="/about-us" className="p-2 hover:bg-[#003049] hover:text-white font-bold">About Us</Link>
                         <Link to="/team-and-support" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Team and Support</Link>
-                        <Link to="/login" className="p-2 hover:bg-[#003049] hover:text-white font-bold"><Login/></Link>
-                        <Link to="/signup" className="p-2 hover:bg-[#003049] hover:text-white font-bold"><Signup/></Link>
-                        <Link to="/forgetpassword" className="p-2 hover:bg-[#003049] hover:text-white font-bold"><ForgetPasword/></Link>
                     </nav>
                 </aside>
 
