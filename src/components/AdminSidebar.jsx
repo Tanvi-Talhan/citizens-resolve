@@ -1,6 +1,6 @@
 import React from 'react'
 
-const GuestSidebar = () => {
+function AdminSidebar() {
     return (
         <>
             <div className="min-h-screen flex flex-col md:grid md:grid-cols-12">
@@ -12,10 +12,11 @@ const GuestSidebar = () => {
                     </div>
                     <nav className="flex flex-col mt-5 px-5">
                         <Link to="/" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Home</Link>
+                        <Link to="/users" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Users</Link>
+                        <Link to="/issue-list" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Issuelist</Link>
                         <Link to="/government-action" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Government Action</Link>
                         <Link to="/news-and-update" className="p-2 hover:bg-[#003049] hover:text-white font-bold">News and Update</Link>
                         <Link to="/guidelines-and-safety-tips" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Guidelines and Safety Tips</Link>
-                        <Link to="/faq" className="p-2 hover:bg-[#003049] hover:text-white font-bold">FAQ</Link>
                         <Link to="/about-us" className="p-2 hover:bg-[#003049] hover:text-white font-bold">About Us</Link>
                         <Link to="/team-and-support" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Team and Support</Link>
                     </nav>
@@ -29,4 +30,5 @@ const GuestSidebar = () => {
         </>
     )
 }
-export default GuestSidebar;
+
+export default AdminSidebar
