@@ -15,19 +15,8 @@ import Hero from '../components/Hero';
 function Home() {
 
     return (
-        <>
-            <div className="min-h-screen flex flex-col md:grid md:grid-cols-12">
-                <Sidebar />
 
-                {/* Main content */}
-                <div className="col-span-10 flex flex-col">
-                    {/* Navbar */}
-                    <Navbar />
-                    <Hero />
-                    <Footer />
-                </div>
-            </div>
-        </>
+        <Hero />
     );
 }
 

@@ -17,16 +17,19 @@ const cards = [
 const GovernmentAction = () => {
     return (
         <>
-            <h1 className='text-center font-bold text-2xl h-10 bg-[#780000] text-orange-200'>
-                Report Your Issue Here....
-            </h1>
-            <div className="p-4 flex justify-center items-center">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                    {cards.map((card, index) => (
-                        <Card key={index} image={card.image} text={card.text} buttonText={card.buttonText} />
-                    ))}
+            <div className='bg-[#669bbc]'>
+                <h1 className='text-center font-bold text-2xl h-10 bg-[#003049] text-white'>
+                    Report Your Issue Here....
+                </h1>
+                <div className="p-4 flex justify-center items-center">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                        {cards.map((card, index) => (
+                            <Card key={index} image={card.image} text={card.text} buttonText={card.buttonText} />
+                        ))}
+                    </div>
                 </div>
             </div>
+
         </>
     );
 };

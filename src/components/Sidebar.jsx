@@ -1,13 +1,21 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 // import Footer from './Footer';
 import image from "../assets/logo.png";
+import Navbar from './Navbar';
+import Footer from './Footer';
 
 const Sidebar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
   return (
     <>
-      {/* Sidebar */}
+      <div className="min-h-screen flex flex-col md:grid md:grid-cols-12">
+        <div className="col-span-10 flex flex-col">
+
+
+          <Navbar />
+
+          {/* User Sidebar */}
       < aside className={`col-span-2 bg-[#e0e1dd] text-black flex flex-col md:sticky md:top-0 h-screen md:h-auto z-20 ${sidebarOpen ? 'block' : 'hidden'} md:block`
       }>
         <div className="flex  mt-5 ">
@@ -27,7 +35,13 @@ const Sidebar = () => {
           <Link to="/team-and-support" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Team and Support</Link>
         </nav>
       </aside >
+          <Outlet />
+          <Footer />
+        </div>
+      </div>
+
     </>
+
   );
 };
 
