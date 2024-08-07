@@ -31,19 +31,19 @@ const teamMembers = [
 ];
 
 const AboutUs = () => {
-  return (
+   return (
     <section className="bg-gray-100 py-12">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">About US</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 bg-[#669bbc]">
-          {teamMembers.map((member, index) => (
-            <div key={index} className="p-4">
-              <Cards {...member} />
-            </div>
-          ))}
-        </div>
+    <div className="container mx-auto px-6">
+      <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">Meet Our Team</h2>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        {teamMembers.map((member, index) => (
+          <div key={index} className="p-4">
+            <Cards {...member} />
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
+  </section>
   );
 };
 
