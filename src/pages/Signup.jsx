@@ -16,12 +16,12 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-purple-500" >
-      <form className="bg-cream p-8 rounded shadow-md w-full max-w-sm" onSubmit={handleSignup}>
-        <h2 className="text-2xl mb-4 text-[#003049]">Sign Up</h2>
-        <p className="mb-4 text-center text-[#003049]">Please fill in this form to create an account!</p>
+    <div className="flex items-center justify-center min-h-screen  bg-[#4c82a3]" >
+      <form className="bg-cream p-8 rounded-xl shadow-md w-full max-w-sm  bg-[#003049]" onSubmit={handleSignup} >
+        <h2 className="text-2xl mb-4 text-white items-center ml-28">Sign Up</h2>
+        <p className="mb-4 text-center text-white">Please fill in this form to create an account!</p>
         <div className="mb-4">
-          <label className="block text-[#003049]">First Name</label>
+          <label className="block text-white">First Name</label>
           <input
             type="text"
             className="w-full p-2 border border-gray-300 rounded mt-1"
@@ -31,7 +31,7 @@ const Signup = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-[#003049]">Last Name</label>
+          <label className="block text-white">Last Name</label>
           <input
             type="text"
             className="w-full p-2 border border-gray-300 rounded mt-1"
@@ -41,7 +41,7 @@ const Signup = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-[#003049]">Email</label>
+          <label className="block text-white">Email</label>
           <input
             type="email"
             className="w-full p-2 border border-gray-300 rounded mt-1"
@@ -51,7 +51,7 @@ const Signup = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-[#003049]">Password</label>
+          <label className="block text-white">Password</label>
           <input
             type="password"
             className="w-full p-2 border border-gray-300 rounded mt-1"
@@ -61,7 +61,7 @@ const Signup = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-[#003049]">Confirm Password</label>
+          <label className="block text-white">Confirm Password</label>
           <input
             type="password"
             className="w-full p-2 border border-gray-300 rounded mt-1"
@@ -71,7 +71,7 @@ const Signup = () => {
           />
         </div>
         <div className="mb-4">
-          <label className="flex items-center text-[#003049]">
+          <label className="flex items-center text-white">
             <input
               type="checkbox"
               className="mr-2"
@@ -79,11 +79,11 @@ const Signup = () => {
               onChange={(e) => setAcceptedTerms(e.target.checked)}
               required
             />
-            I accept the <a href="#" className="text-blue-500">Terms of Use</a> & <a href="#" className="text-blue-500">Privacy Policy</a>.
+            I accept the <a href="#" className="text-white">Terms of Use</a> & <a href="#" className="text-white">Privacy Policy</a>.
           </label>
         </div>
-        <button type="submit" className="w-full bg-brown text-white p-2 rounded">Sign Up</button>
-        <p className="mt-4 text-center text-[#003049]">Already have an account? <a href="/login" className="text-blue-500">Login here.</a></p>
+        <button type="submit" className="w-44 ml-50 bg-[#4c82a3] text-white p-2 rounded">Sign Up</button>
+        <p className="mt-4  text-white">Already have an account? <a href="/login" className="text-white">Login here.</a></p>
       </form>
     </div>
   );
