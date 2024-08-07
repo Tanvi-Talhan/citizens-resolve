@@ -69,7 +69,7 @@ const GuidelinesAndSafety = () => {
                 className="relative flex flex-col items-center rounded-md shadow-md transition-all duration-300"
                 style={{
                   height: activeIndex === index ? 'auto' : '300px',
-                  backgroundColor: '#edf6f9', // card outer color
+                  backgroundColor: '#e0e1dd', // card outer color
                 }}
               >
                 <div className="text-3xl sm:text-4xl mb-4 mt-6">
