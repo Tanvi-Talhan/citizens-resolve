@@ -39,7 +39,6 @@ function App() {
           <Route path="user-profile" element={<UserProfile />} />
           <Route path="faq" element={<FAQ />} />
           <Route path="feedback-and-suggestion" element={<FeedbackAndSuggestion />} />
-
           <Route path="about-us" element={<AboutUs />} />
           <Route path="team-and-support" element={<TeamAndSupport />} />
         </Route>
