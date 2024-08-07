@@ -7,7 +7,7 @@ const Navbar = () => {
         <>
             <nav className="w-full h-14 z-10 sticky top-0 flex items-center justify-between px-4 md:px-0 pl-10" style={{ backgroundColor: "#003049" }}>
                 <Breadcrumb />
-                <button
+                {/* <button
                     className="text-white md:hidden"
                     onClick={() => setSidebarOpen(!sidebarOpen)}
                 >
@@ -18,7 +18,7 @@ const Navbar = () => {
                     style={{ fontSize: 'bold' }}
                 >
                     Login
-                </button>
+                </button> */}
             </nav>
         </>
     );
