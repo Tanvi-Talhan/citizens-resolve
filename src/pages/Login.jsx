@@ -17,7 +17,7 @@ const Login = ({ onLogin }) => {
       <div className="absolute inset-0">
         <img src ={image} alt="Background" className="object-cover w-full h-full " />
       </div>
-      <form onSubmit={handleSubmit} className=" bg-[#003049] p-6 rounded-xl shadow-md w-80 z-10"> 
+      <form onSubmit={handleSubmit} className="  bg-[#003049] p-6 rounded-xl shadow-md w-80 z-10"> 
         <h2 className="text-2xl mb-4 text-white font-extrabold ml-24">Login</h2>
         <div className="mb-4">
           <label className="block mb-1 text-white">Email</label>
