@@ -31,7 +31,7 @@ const NewsPortal = () => {
       <main className="container mt-8 my-1" style={{ backgroundColor: '#669bbc' }}>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-3 mx-3 my-3">
           {/* Big Card with Swiper */}
-          <div className="bg-[#edf6f9] rounded-md shadow-md p-4 lg:col-span-2">
+          <div className="bg-[#e0e1dd] rounded-md shadow-md p-4 lg:col-span-2">
             <Swiper pagination={true} modules={[Pagination]} className="mySwiper flex w-full rounded-lg mb-4">
               <SwiperSlide>
                 <img src={news1} alt="news 1" className="w-full rounded-lg mb-4" />
@@ -98,7 +98,7 @@ const NewsPortal = () => {
 
           {/* Small Cards */}
           <div className="grid grid-cols-1 gap-4 lg:col-span-1">
-            <div className="bg-[#edf6f9] rounded-md shadow-md p-4">
+            <div className="bg-[#e0e1dd] rounded-md shadow-md p-4">
               <img src={img2} alt="Best New Phone" className="w-full rounded-lg mb-4" />
               <div className="flex justify-between items-center">
                 <span className="text-white px-2 py-1 rounded-md text-sm" style={{ backgroundColor: '#003049' }}>Festival</span>
@@ -115,7 +115,7 @@ const NewsPortal = () => {
               </p>
             </div>
 
-            <div className="bg-[#edf6f9] rounded-md shadow-md p-4">
+            <div className="bg-[#e0e1dd] rounded-md shadow-md p-4">
               <img src={img3} alt="Trending Gadget 5" className="w-full rounded-lg mb-4" />
               <div className="flex justify-between items-center">
                 <span className="text-white px-2 py-1 rounded-md text-sm" style={{ backgroundColor: '#003049' }}>Infrastructure</span>
@@ -132,7 +132,7 @@ const NewsPortal = () => {
               </p>
             </div>
 
-            <div className="bg-[#edf6f9] rounded-md shadow-md p-4">
+            <div className="bg-[#e0e1dd] rounded-md shadow-md p-4">
               <img src={img4} alt="Trending Gadget 6" className="w-full rounded-lg mb-4" />
               <div className="flex justify-between items-center">
                 <span className="text-white px-2 py-1 rounded-md text-sm" style={{ backgroundColor: '#003049' }}>Award</span>
