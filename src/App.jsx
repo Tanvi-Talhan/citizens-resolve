@@ -12,10 +12,16 @@ import TeamAndSupport from './pages/TeamAndSupport.jsx';
 import FAQ from './pages/FAQ.jsx';
 import GuidelinesAndSafety from './pages/GuidelinesAndSafety.jsx';
 import Sidebar from './components/Sidebar.jsx';
+import Login from './pages/Login.jsx';
+import Signup from './pages/Signup.jsx';
+
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="login" element={<Login />} />
+        <Route path="signup" element={<Signup />} />
+
         {/* <Route path="/" element={<Home />} /> */}
         <Route path="/" element={<Sidebar />}>
           <Route index element={<Home />} />

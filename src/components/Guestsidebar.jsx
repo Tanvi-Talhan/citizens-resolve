@@ -18,6 +18,8 @@ const GuestSidebar = () => {
                         <Link to="/faq" className="p-2 hover:bg-[#003049] hover:text-white font-bold">FAQ</Link>
                         <Link to="/about-us" className="p-2 hover:bg-[#003049] hover:text-white font-bold">About Us</Link>
                         <Link to="/team-and-support" className="p-2 hover:bg-[#003049] hover:text-white font-bold">Team and Support</Link>
+                        <Link to="/login" className="p-2 hover:bg-[#003049] hover:text-white font-extrabold">Login</Link>
+
                     </nav>
                 </aside >
                 <div className="col-span-10 flex flex-col">
