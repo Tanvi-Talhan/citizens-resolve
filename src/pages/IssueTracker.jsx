@@ -24,9 +24,9 @@ function IssueTracker() {
 
     return (
         <>
-            <div className="min-h-screen bg-gray-100 p-8">
+            <div className="min-h-screen bg-[#669bbc] p-8">
                 <div className="container mx-auto">
-                    <h1 className="text-3xl font-bold mb-8">Personal Issue Tracker</h1>
+                    <h1 className="text-3xl font-bold mb-8 text-white text-center">Personal Issue Tracker</h1>
                     <div className="bg-white rounded-lg shadow-lg p-6">
                         <table className="w-full border-collapse">
                             <thead>
@@ -50,7 +50,7 @@ function IssueTracker() {
                                         <td className="py-3 px-6 text-left">{issue.severityLevel}</td>
                                         <td className="py-3 px-6 text-left">{issue.issueStatus}</td>
                                         <td className="py-3 px-6 text-left">
-                                            <button className="bg-blue-500 text-white px-4 py-1 rounded shadow-lg hover:bg-blue-600 transition-all">
+                                            <button className="bg-[#003049] text-white px-4 py-1 rounded shadow-lg hover:bg-blue-600 transition-all">
                                                 View
                                             </button>
                                         </td>
