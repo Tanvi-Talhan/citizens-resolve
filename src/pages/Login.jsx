@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import image from "../assets/loginbg1.png"
+import image from "../assets/loginbg.png"
 
 
 
@@ -29,7 +29,10 @@ const Login = ({ onLogin }) => {
           />
         </div>
         <div className="mb-4">
-          <label className="block mb-1 text-white">Password</label>
+          <div className="flex justify-between mb-1">
+            <label className="text-white">Password</label>
+            <a href="/forget-pass" className="text-blue-400 font-bold">Forgot Password?</a>
+          </div>
           <input
             type="password"
             value={password}
