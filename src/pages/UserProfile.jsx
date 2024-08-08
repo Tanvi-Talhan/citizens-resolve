@@ -1,4 +1,5 @@
 import React from 'react';
+import samiksha from '../assets/images/samiksha'
 
 function UserProfile() {
   return (
@@ -8,7 +9,7 @@ function UserProfile() {
           <div className="flex justify-center mb-4">
             <img
               className="rounded-full h-24 w-24"
-              src=''
+              src={samiksha}
               alt="User profile"
             />
           </div>
