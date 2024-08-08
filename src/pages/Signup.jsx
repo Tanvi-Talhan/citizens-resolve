@@ -18,7 +18,7 @@ const Signup = () => {
   return (
     <div className="flex items-center justify-center min-h-screen  bg-[#4c82a3]" >
       <form className="bg-cream p-8 rounded-xl shadow-md w-full max-w-sm  bg-[#003049]" onSubmit={handleSignup} >
-        <h2 className="text-2xl mb-4 text-white items-center ml-28">Sign Up</h2>
+        <h2 className="text-2xl mb-4 text-white items-center ml-28 font-extrabold">Sign Up</h2>
         <p className="mb-4 text-center text-white">Please fill in this form to create an account!</p>
         <div className="mb-4">
           <label className="block text-white">First Name</label>
@@ -82,8 +82,8 @@ const Signup = () => {
             I accept the <a href="#" className="text-white">Terms of Use</a> & <a href="#" className="text-white">Privacy Policy</a>.
           </label>
         </div>
-        <button type="submit" className="w-44 ml-50 bg-[#4c82a3] text-white p-2 rounded">Sign Up</button>
-        <p className="mt-4  text-white">Already have an account? <a href="/login" className="text-white">Login here.</a></p>
+        <button type="submit" className="w-44 ml-50 bg-[#4c82a3] text-white p-2 rounded font-extrabold">Sign Up</button>
+        <p className="mt-4  text-white">Already have an account? <a href="/login" className="text-blue-500 font-extrabold">Login here.</a></p>
       </form>
     </div>
   );
