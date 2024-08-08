@@ -13,6 +13,7 @@ function IssueTracker() {
             dateOfOccurrence: '07-08-2024',
             timeOfOccurrence: '14:30',
             severityLevel: 'Low',
+            issueStatus: 'Pending',
             description: 'There is a persistent leak in the main water pipe.',
             supportingDocument: 'leak.jpg',
             confirmInfo: true,
@@ -35,6 +36,7 @@ function IssueTracker() {
                                     <th className="py-3 px-6 text-left">Location</th>
                                     <th className="py-3 px-6 text-left">Date</th>
                                     <th className="py-3 px-6 text-left">Severity</th>
+                                    <th className="py-3 px-6 text-left">Status</th>
                                     <th className="py-3 px-6 text-left">Actions</th>
                                 </tr>
                             </thead>
@@ -46,6 +48,7 @@ function IssueTracker() {
                                         <td className="py-3 px-6 text-left">{issue.location}</td>
                                         <td className="py-3 px-6 text-left">{issue.dateOfOccurrence}</td>
                                         <td className="py-3 px-6 text-left">{issue.severityLevel}</td>
+                                        <td className="py-3 px-6 text-left">{issue.issueStatus}</td>
                                         <td className="py-3 px-6 text-left">
                                             <button className="bg-blue-500 text-white px-4 py-1 rounded shadow-lg hover:bg-blue-600 transition-all">
                                                 View
