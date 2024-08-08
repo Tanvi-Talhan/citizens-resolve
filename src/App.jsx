@@ -14,6 +14,7 @@ import GuidelinesAndSafety from './pages/GuidelinesAndSafety.jsx';
 import Sidebar from './components/Sidebar.jsx';
 import Login from './pages/Login.jsx';
 import Signup from './pages/Signup.jsx';
+import ForgetPassword from './components/ForgetPassword.jsx';
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
       <Routes>
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<Signup />} />
-
+        <Route path="forget-pass" element={<ForgetPassword />} />
         {/* <Route path="/" element={<Home />} /> */}
         <Route path="/" element={<Sidebar />}>
           <Route index element={<Home />} />
@@ -34,6 +35,7 @@ function App() {
           <Route path="faq" element={<FAQ />} />
           <Route path="feedback-and-suggestion" element={<FeedbackAndSuggestion />} />
           <Route path="about-us" element={<AboutUs />} />
+          <Route path="user-profile" element={<UserProfile />} />
           <Route path="team-and-support" element={<TeamAndSupport />} />
         </Route>
       </Routes>
