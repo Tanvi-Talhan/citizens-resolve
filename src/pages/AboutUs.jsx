@@ -29,7 +29,6 @@ const teamMembers = [
     image: 'https://via.placeholder.com/150',
   },
 ];
-
 const AboutUs = () => {
    return (
     <section className="bg-gray-100 py-12">
