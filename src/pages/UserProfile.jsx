@@ -3,34 +3,34 @@ import React from 'react';
 function UserProfile() {
   return (
     <>
-      <div className="min-h-screen bg-gray-100 flex justify-center items-center">
-        <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-lg">
+      <div className="min-h-screen bg-[#4c82a3] flex justify-center items-center">
+        <div className=" bg-[#003049] p-8 rounded-lg shadow-md w-full max-w-lg">
           <div className="flex justify-center mb-4">
             <img
               className="rounded-full h-24 w-24"
-              src="https://via.placeholder.com/150"
+              src=''
               alt="User profile"
             />
           </div>
-          <h2 className="text-center text-2xl font-semibold mb-6">My Profile</h2>
+          <h2 className="text-center  text-white  text-2xl font-extrabold mb-6">My Profile</h2>
           <div className="mb-4">
-            <label className="block text-gray-700">First Name</label>
+            <label className="block text-white">First Name</label>
             <input
               type="text"
               className="mt-1 p-2 w-full border rounded-md focus:ring focus:ring-opacity-50 focus:ring-indigo-300"
-              defaultValue="Andrew"
+              defaultValue="Samiksha"
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Last Name</label>
+            <label className="block  text-white">Last Name</label>
             <input
               type="text"
               className="mt-1 p-2 w-full border rounded-md focus:ring focus:ring-opacity-50 focus:ring-indigo-300"
-              defaultValue="Turing"
+              defaultValue="Mogre"
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Time Zone</label>
+            <label className="block  text-white">Time Zone</label>
             <input
               type="text"
               className="mt-1 p-2 w-full border rounded-md focus:ring focus:ring-opacity-50 focus:ring-indigo-300"
@@ -38,7 +38,7 @@ function UserProfile() {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Phone</label>
+            <label className="block  text-white">Phone</label>
             <input
               type="text"
               className="mt-1 p-2 w-full border rounded-md focus:ring focus:ring-opacity-50 focus:ring-indigo-300"
@@ -46,7 +46,7 @@ function UserProfile() {
             />
           </div>
           <div className="mb-4">
-            <label className="block text-gray-700">Email Address</label>
+            <label className="block  text-white">Email Address</label>
             <input
               type="email"
               className="mt-1 p-2 w-full border rounded-md focus:ring focus:ring-opacity-50 focus:ring-indigo-300"
