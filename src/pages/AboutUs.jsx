@@ -5,27 +5,27 @@ import Cards from '../components/Cards';
 const teamMembers = [
   {
     name: 'Tanvi',
-    title: 'UX/UI Designer',
+    title: 'Team lead /Project Management',
     image: 'src/assets/images/tanvi.jpg',
   },
   {
     name: 'Sanjana Mankar',
-    title: 'Web Developer',
+    title: 'Backend Developer',
     image: 'src/assets/images/sanjana1.png',
   },
   {
     name: 'Piyush Falke',
-    title: 'Software Engineer',
+    title: 'Testing and Debbuging',
     image: 'src/assets/images/piyush1.png',
   },
   {
     name: 'Vaibhav Kondhekar',
-    title: 'Project Manager',
+    title: 'Frontend Developer',
     image: 'src/assets/images/vaibhav.jpg',
   },
   {
     name: 'Samiksha Mogre',
-    title: 'Graphic Designer',
+    title: 'UI/UX Developer',
     image: 'src/assets/images/samiksha.jpg',
   },
 ];
