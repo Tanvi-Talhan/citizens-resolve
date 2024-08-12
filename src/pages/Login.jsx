@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import image from "../assets/loginbg1.png"
+import image from "../assets/loginbg.png"
 
 
 
@@ -17,7 +17,7 @@ const Login = ({ onLogin }) => {
       <div className="absolute inset-0">
         <img src ={image} alt="Background" className="object-cover w-full h-full " />
       </div>
-      <form onSubmit={handleSubmit} className=" bg-[#003049] p-6 rounded-xl shadow-md w-80 z-10"> 
+      <form onSubmit={handleSubmit} className="  bg-[#003049] p-6 rounded-xl shadow-md w-80 z-10"> 
         <h2 className="text-2xl mb-4 text-white font-extrabold ml-24">Login</h2>
         <div className="mb-4">
           <label className="block mb-1 text-white">Email</label>
@@ -29,7 +29,10 @@ const Login = ({ onLogin }) => {
           />
         </div>
         <div className="mb-4">
-          <label className="block mb-1 text-white">Password</label>
+          <div className="flex justify-between mb-1">
+            <label className="text-white">Password</label>
+            <a href="/forget-pass" className="text-blue-400 font-bold">Forgot Password?</a>
+          </div>
           <input
             type="password"
             value={password}
