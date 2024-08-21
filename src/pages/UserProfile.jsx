@@ -1,5 +1,5 @@
 import React from 'react';
-import samiksha from '../assets/images/samiksha'
+import samiksha from '../assets/images/samiksha.jpg'
 
 function UserProfile() {
   return (

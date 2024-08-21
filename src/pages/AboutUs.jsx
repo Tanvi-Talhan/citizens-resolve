@@ -4,7 +4,7 @@ import Cards from '../components/Cards';
 
 const teamMembers = [
   {
-    name: 'Tanvi',
+    name: 'Tanvi Talhan',
     title: 'Team lead /Project Management',
     image: 'src/assets/images/tanvi.jpg',
   },
