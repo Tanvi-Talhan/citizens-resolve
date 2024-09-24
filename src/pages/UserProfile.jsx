@@ -4,6 +4,7 @@ import samiksha from '../assets/images/samiksha.jpg'
 function UserProfile() {
   return (
     <>
+
       <div className="min-h-screen bg-[#4c82a3] flex justify-center items-center">
         <div className=" bg-[#003049] p-8 rounded-lg shadow-md w-full max-w-lg">
           <div className="flex justify-center mb-4">
